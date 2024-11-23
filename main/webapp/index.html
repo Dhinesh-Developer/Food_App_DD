@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Practice Mode...</title>
+</head>
+<body>
+  
+<div class="container">
+    <img src="https://i.redd.it/2xiqq0gogg461.png" alt="Restaurant Image">
+</div>
+
+<fieldset class="fieldset">
+  <form> 
+    <h2>Welcome To DK Restaurant!</h2>
+    <br>
+    
+    <!-- Sign Up button -->
+    <button type="button" onclick="location.href='signup.html'" style="width: 100%; padding: 14px 20px; background-color: #04AA6D; color: white; border-radius: 5px; font-family: cursive; cursor: pointer;">
+        Sign Up
+    </button>
+    <br><br>
+    
+    <!-- Login button -->
+    <button type="button" onclick="location.href='FirstPage.html'" style="width: 100%; padding: 14px 20px; background-color: #04AA6D; color: white; border-radius: 5px; font-family: cursive; cursor: pointer;">
+        Login
+    </button>
+    <br>
+  </form>
+</fieldset>
+
+<style>
+img {
+    border: solid black;
+    border-width: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.fieldset {
+    font-family: cursive;
+    color: white;
+    width: 200px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    top: 110px;
+    left: 200px;
+    background-color: rgba(0,100,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 0px;
+    font-size: 17px;
+    padding: 50px 60px;
+    border-color: #00FFFF;
+    animation: animate 1.3s ease-in-out infinite;
+}
+
+input:hover[type=submit], button:hover {
+    background-color: #00FFFF;
+    color: #FF0000;
+    animation: animate 50s ease-in-out infinite;
+}
+
+p {
+    background-width: 100%;
+    text-align: center;
+    border-radius: 0px;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+@keyframes animate {
+    from {
+        box-shadow: 0 0 20px #00FFFF;
+    }
+    to {
+        box-shadow: 0 0 40px #00FFFF, 0 0 10px #00FFFF;
+    }
+}
+
+span.psw {
+    color: white;
+    float: right;
+    padding-top: 16px;
+    font-size: 15px;
+    font-family: arial;
+}
+
+.check {
+    font-size: 14px;
+    font-family: arial;
+    transform: translate(0%, -100%);
+}
+
+.forgot {
+    color: white;
+    font-size: 15px;
+}
+</style>
+
+</body>
+</html>

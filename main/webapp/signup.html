@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant User Registration</title>
+<link
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	rel="stylesheet">
+<style>
+body {
+	background-image:
+		url('https://t3.ftcdn.net/jpg/02/05/87/60/360_F_205876015_hYYs7ugqoU8QAobSS3TbnGQ92qyS5gEc.jpg');
+	background-size: cover;
+	background-position: center;
+	color: white;
+	font-family: 'Arial', sans-serif;
+}
+
+.registration-form {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 30px;
+	border-radius: 10px;
+	max-width: 500px;
+	margin: auto;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	margin-top: 50px;
+}
+
+.registration-form h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'Georgia', serif;
+	color: #FFD700;
+}
+
+.form-control {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="submit"] {
+	background-color: #FFD700;
+	color: black;
+	font-weight: bold;
+	border: none;
+	transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+	background-color: #FF6347;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="registration-form">
+			<h2>User Registration</h2>
+			<form action="userServlet" method="post">
+				<div class="form-group">
+					<label for="name">Name:</label> <input type="text"
+						class="form-control" id="name" name="username" required>
+				</div>
+
+				<div class="form-group">
+					<label for="password">Password:</label> <input type="password"
+						class="form-control" id="password" name="password" required>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email:</label> <input type="email"
+						class="form-control" id="email" name="email" required>
+				</div>
+
+				<div class="form-group">
+					<label for="phone">Phone:</label> <input type="text"
+						class="form-control" id="phone" name="phone" required>
+				</div>
+
+				<div class="form-group">
+					<label for="address">Address:</label> <input type="text"
+						class="form-control" id="address" name="address" required>
+				</div>
+
+
+
+				<input type="submit" class="btn btn-primary btn-block"
+					value="Submit">
+			</form>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
